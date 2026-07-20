@@ -1,34 +1,50 @@
-# Crawl4AI Web Content Extraction
+# Web Content Extraction using Crawl4AI
 
-A simple Python project that demonstrates web content extraction using **Crawl4AI**. The application crawls a webpage and converts the extracted content into Markdown format.
+A simple Python application that uses **Crawl4AI** to crawl a webpage and extract its content in **Markdown** format.
 
-## What this project does
+## Features
 
-- Installs and configures Crawl4AI.
-- Downloads the required Playwright browser binaries.
-- Verifies the installation using `crawl4ai-doctor`.
-- Crawls a webpage using `AsyncWebCrawler`.
-- Extracts the webpage content.
-- Prints the generated Markdown output.
+- Crawl any publicly accessible webpage.
+- Extract webpage content.
+- Generate structured Markdown output.
+- Asynchronous implementation using `AsyncWebCrawler`.
 
 ## Tech Stack
 
 - Python
 - Crawl4AI
-- Playwright
 - AsyncIO
+
+## Project Structure
+
+```text
+.
+├── task2.py
+├── requirements.txt
+└── README.md
+```
 
 ## Installation
 
+1. Install the required package:
+
 ```bash
 pip install crawl4ai
+```
 
+2. Download the required browser binaries:
+
+```bash
 crawl4ai-setup
+```
 
+3. Verify the installation:
+
+```bash
 crawl4ai-doctor
 ```
 
-## Run
+## Run the Project
 
 ```bash
 python task2.py
@@ -49,6 +65,6 @@ if __name__ == "__main__":
     asyncio.run(main())
 ```
 
-## Output
+## Sample Output
 
 The application crawls the specified webpage and prints the first 1000 characters of the extracted content in Markdown format.
