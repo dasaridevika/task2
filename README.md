@@ -31,7 +31,7 @@ crawl4ai-doctor
 ## Run
 
 ```bash
-python main.py
+python task2.py
 ```
 
 ## Sample Code
